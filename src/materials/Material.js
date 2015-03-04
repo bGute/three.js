@@ -177,6 +177,9 @@ THREE.Material.prototype = {
 
 			output.color = this.color.getHex();
 
+		} else if (this instanceof THREE.LineBasicMaterial) {
+
+		    output.color = this.color.getHex();
 		}
 
 		if ( this.opacity < 1 ) output.opacity = this.opacity;
